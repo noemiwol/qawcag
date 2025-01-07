@@ -22,7 +22,8 @@ Tester's Portfolio to responsywna strona internetowa stworzona w HTML i CSS, zap
 Stworzenie przejrzystej i nowoczesnej strony, która pomoże autorowi w promowaniu swoich umiejętności testerskich oraz w zdobyciu nowych klientów i projektów.
 
 ## Podgląd strony:
-(Umieść link do działającej wersji strony, jeśli opublikowano ją w GitHub Pages lub innym hostingu)
+(tu będzie link)
+
 
 ## Jak uruchomić lokalnie:
 1. Sklonuj repozytorium:
