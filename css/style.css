@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f4f4f4;
+    background-color: #19191B;
+    max-width: 1440px;
+    margin: 0 ;
+    background-size: cover;
+
+}
+header{
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    
+}
+.header-container {
+    padding: 20px 40px;
+    display: flex; 
+    justify-content: space-between; 
+    max-width: 1440px;
+
+}
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+
+}
+.header-logo img {
+    left: 120;
+    top: 42;
+    height: 40px;
+
+}
+
+.text-logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    align-items: center;
+    gap: 40px;
+}
+.nav-menu {
+    position: absolute; 
+    left: 532px; 
+    top: 50px; 
+    display: flex; 
+    gap: 40px; 
+    align-items: center; 
+}
+.nav-menu ul {
+    display: flex;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    gap: 30px; 
+}
+.nav-menu a {
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 18px; 
+    font-weight: normal;
+    transition: color 0.3s;
+    padding: 5px 10px; 
+}
+.nav-menu a:hover {
+    color: #5454D4;
+    font-weight: bold;
+}
+.button-container{
+    height: 50px;
+}
+.button-container .btn-contact {
+    display: flex;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #fff; 
+    color: #fff;
+    border-radius: 5px; 
+    transition: all 0.3s;
+}
+
+.button-container .btn-contact:hover {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.hero-section {
+    left: 120px;
+    top: 231px;
+    width: 858.65px;
+    height: 392px;
+    padding: 80px 40px;
+    overflow: visible;
+
+}
+.background-decorations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.decoration-1, .decoration-2 {
+    position: absolute;
+    filter: blur(150px);
+    opacity: 0.5;
+}
+
+.decoration-1 {
+    top: 231.97px;
+    left: -401.52px;
+    width: 467px;
+    height: 1233.79px;
+    background: linear-gradient(180deg, rgba(84, 84, 212, 0.4) 0%, rgba(128, 0, 128, 0) 100%);
+    transform: rotate(-54.37deg);
+}
+
+.decoration-2 {
+    left: 1701.44px;
+    top: 161px;
+    bottom: -100px;
+    right: -200px;
+    width: 500px;
+    height: 1399.3px;
+    background: linear-gradient(180deg, rgba(212, 84, 84, 0.4) 0%, rgba(128, 0, 128, 0) 100%);
+    transform: rotate(-65.71deg);
+}
+.hero-section .hero-content .hero-heading{
+    left: 120px;
+    top: 231px;
+    font-weight: bold;
+    font-size: 4.36rem;
+    line-height: 81.3px;
+    justify-content: left;
+    letter-spacing: 0px;
+    height: 244px;
+    vertical-align: top;
+    color: #FFF;
+    display: flex;
+    gap: 20px; 
+}
+.hero-section .hero-content .hero-description{
+    left: 123px;
+    top: 506px;
+    width: 675px;
+    color: rgba(255, 255, 255, 0.7);
+    height: 117px;
+    line-height: 39px;
+    font-size: 1.31rem ;
+    margin-top: 50px;
+    letter-spacing: -0.66px;
+    font-weight: 400;
+    vertical-align: top;
+    display: flex;
+}
+.hero-button {
+    margin-top: 40px; 
+}
+
+.hero-button .btn-download-cv{
+    left: 123px;
+    top: 662px;
+    width: 204px;
+    height: 58px;
+    text-decoration: none;
+    background-color: #5454D4;
+    color: #FFF;
+    margin: 20px 0;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.hero-button  .btn-download-cv:hover {
+    font-weight: bold;
+}
+
+.hero-image .main-image {
+    box-sizing: content-box;
+    z-index: 2; 
+    width: 375.34px;
+    height: 375.34px;
+    opacity: 1;
+    position: absolute;
+    left: 1021.5px;
+    top: 228px;
+}
+
+.hero-image .border-image {
+    position: absolute;
+    width: 375.34px;
+    height: 375.34px;
+    left: 1009.5px;
+    top: 189px;
+    position: absolute;
+}
+
+.hero-image .circle-decoration {
+    position: absolute;
+    left: 1269px;
+    top: 184px;
+    width: 51px;
+    height: 60px;
+    letter-spacing: -0.29em;
+}
+
+.hero-image .plus-symbol {
+    position: absolute;
+    left: 1283px;
+    top: 726px;
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+   
+}
