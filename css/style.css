@@ -15,6 +15,8 @@ body{
     max-width: 1440px;
     margin: 0 ;
     background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
 
 }
 header{
@@ -41,8 +43,8 @@ header{
 
 }
 .header-logo img {
-    left: 120;
-    top: 42;
+    left: 120px;
+    top: 42px;
     height: 40px;
 
 }
@@ -54,6 +56,7 @@ header{
     align-items: center;
     gap: 40px;
 }
+
 .nav-menu {
     position: absolute; 
     left: 532px; 
@@ -67,7 +70,6 @@ header{
     list-style: none; 
     margin: 0;
     padding: 0;
-    display: flex; 
     gap: 30px; 
 }
 .nav-menu a {
@@ -230,6 +232,50 @@ header{
     top: 726px;
     width: 50px;
     height: 50px;
+    gap: 50px;
+}
+.video-section  {
+    position: absolute;
+    left: 90px;
+    top: 831px;
+    width: 1222px;
+    height: 860px;
+    gap: 50px;
+}
+.video-section .text-content{
+    display: flex; 
+    left: 90px;
+    top: 831px;
+    max-width: 1222px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+ .video-title{
+    flex: 2;
+    left: 90px;
+    top: 931px;
+    width: 813px;
+    height: 140px;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    font-family: 'Playfair Display', serif;
+}
+ .video-description{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: start;
+    flex: 1;
+    left: 949px;
+    top: 853px;
+    width: 393px;
+    height: 96px;
+    font-weight: 400;
+    letter-spacing: -0.66px;
+    font-size: 21px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 768px) {
