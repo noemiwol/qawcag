@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style copy.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="icon" type="image/png" href="img/favicon.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
         <header>
-                    <nav >
-                        <ul class="nav-bar">
-                            <li class="logo-wrapper header-logo logo"><a href="#"> <img src="img/Logo_(1).png" alt="Logo"></a><a href="#"><p class="text-logo">Lorem, ipsum.</p></a></li>
-                            <input type="checkbox" id="check">
-                            <span class="menu">
-                                <li><a href="#aboutMe">O mnie</a></li>
-                                <li><a href="#services">Usługi</a></li>
-                                <li><a href="#project">Projekty</a></li>
-                                <li><a href="#contact" >Kontakt</a></li>
-                                <label for="check" class="close-menu"><i class="fas fa-time"></i></label>
-                            </span>
-                            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            <div class="header-container">
+                <div class="logo-wrapper">
+                    <div class="header-logo">
+                        <img src="img/Logo_(1).png" alt="Logo">
+                    </div>
+                    <div class="text-logo">
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                </div>
+                <div>
+                    <nav class="nav-menu">
+                        <ul class="menu">
+                            <li><a href="#aboutMe">O mnie</a></li>
+                            <li><a href="#services">Usługi</a></li>
+                            <li><a href="#project">Projekty</a></li>
+                            <li><a href="#contact" class="button-container btn-contact">Kontakt</a></li>
+                            <li><a href="#contact" class="mobile">Kontakt</a></li>
                         </ul>
                     </nav>
-                </header>
+                </div>
+                
+            </div>
             <section id="hero" class="hero-section">
                 <div class="hero-content">
                     <h1 class="hero-heading">
@@ -79,8 +85,9 @@
                 <img src="img/decoration-1.png" alt="Gradient Dekoracja 1" class=" services services-decoration-1">
                 <img src="img/decoration-2.png" alt="Gradient Dekoracja 2" class="services services-decoration-2">
                 <img src="img/triangle-decoration.png" alt="Trójkątna Dekoracja" class=" services-triangle-decoration">
+                <img src="img/plus-decoration.png" alt="Plus Dekoracja" class=" services-plus-decoration">
                 <h2>The Service We Provide For You</h2>
-              <img src="img/plus-decoration.png" alt="Plus Dekoracja" class="services-plus-decoration1">
+              <img src="img/plus-decoration.png" alt="Plus Dekoracja" class="services-plus-decoration">
             </div>
             <div class="services-grid">
               <div class="service">
@@ -113,9 +120,10 @@
                 <h3>Videography</h3>
                 <p>Create a platform with the best and coolest quality from us.</p>
               </div>
-              <img src="img/plus-decoration.png" alt="Plus Dekoracja" class=".plus-decoration2">
             </div>
           </section>
+          
+         
           <section id="project" class="portfolio-section">
             <div class="portfolio-header">
               <img src="img/Rectangle_9521.png" alt="Gradient Dekoracja 1" class=" portfolio-decoration">
@@ -147,8 +155,8 @@
             <div class="footer-container">
                 <div class="footer-left">
                     <div class="logo-wrapper">
-                        <a href="#"><img src="img/Logo_(1).png" alt="Logo firmy" class="footer-logo"></a>
-                        <a href="#"><p class="text-logo-footer">Lorem, ipsum.</p></a>
+                        <img src="img/Logo_(1).png" alt="Logo firmy" class="footer-logo">
+                        <p class="text-logo-footer">Lorem, ipsum.</p>
                     </div>
                 </div>
                 <div class="footer-center">
@@ -165,31 +173,5 @@
             </div>
         </footer>
     </div>
-    <script>
-        // Pobieranie elementów
-        const checkbox = document.getElementById('check');
-        const menuLinks = document.querySelectorAll('.menu li a');
-
-        // Zamknij menu po kliknięciu w link
-        menuLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            checkbox.checked = false;
-        });
-        });
-
-        // Zamknij menu po kliknięciu poza nim
-        document.addEventListener('click', (event) => {
-        const menu = document.querySelector('.menu');
-        const openMenu = document.querySelector('.open-menu');
-
-        if (
-            !menu.contains(event.target) && 
-            !openMenu.contains(event.target) && 
-            event.target.id !== 'check'
-        ) {
-            checkbox.checked = false;
-        }
-        });
-    </script>
 </body>
 </html>
