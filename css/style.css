@@ -1225,9 +1225,43 @@ text-decoration: none;
   width: 100%;
 }
 
-.scroll-to-top {
-    font-size: 24px;
-    color: white;
+/* Wrapper for scroll-to-top button */
+.scroll-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  /* Scroll-to-top button styles */
+  .scroll-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color); /* Przyjazny kolor, np. #5454D4 */
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 50%; /* Okrągły kształt */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover and focus styles */
+  .scroll-to-top:hover,
+  .scroll-to-top:focus {
+    background-color: #4242b8; /* Ciemniejszy odcień */
+    transform: translateY(-5px); /* Animacja przy najechaniu */
+    outline: none; /* Usuwanie domyślnego konturu */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Accessibility: Focus state */
+  .scroll-to-top:focus {
+    outline: 2px solid #ffffff; /* Dodanie białego konturu */
+    outline-offset: 4px;
   }
 @media (max-width: 768px) {
      /* Footer section layout adjustments for mobile */
@@ -1277,5 +1311,10 @@ text-decoration: none;
     line-height: 1.75rem;
     font-weight: var(--font-weight-normal);
     text-align: center;
+  }
+  .scroll-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
   }
 }
